@@ -11,15 +11,13 @@ public:
         for (int i = 0; i < nums.size(); i++) {
             int complement = target - nums[i]; 
 
-            // Check if we've already seen the complement
             if (seenNumbers.count(complement)) {
                 return {seenNumbers[complement], i};  
             }
 
-            // Store the current number and its index in the map
             seenNumbers[nums[i]] = i;
         }
 
-        return {};  // Shouldn't reach here as per the problem's guarantee
+        return {};  
     }
 };
