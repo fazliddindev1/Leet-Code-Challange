@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> seenNumbers;  // Store the number and its index
+        unordered_map<int, int> seenNumbers;  
 
         // Loop through the numbers in the array
         for (int i = 0; i < nums.size(); i++) {
