@@ -8,13 +8,12 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> seenNumbers;  
 
-        // Loop through the numbers in the array
         for (int i = 0; i < nums.size(); i++) {
-            int complement = target - nums[i];  // Find the number we need
+            int complement = target - nums[i]; 
 
             // Check if we've already seen the complement
             if (seenNumbers.count(complement)) {
-                return {seenNumbers[complement], i};  // Return the two indices
+                return {seenNumbers[complement], i};  
             }
 
             // Store the current number and its index in the map
